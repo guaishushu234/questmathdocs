@@ -1,1 +1,1 @@
-#  Techniques of Integration 
+# 8 Techniques of Integration

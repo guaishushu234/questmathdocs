@@ -1,1 +1,1 @@
-#  Applications of Definite Integrals 
+# 6 Applications of Definite Integrals

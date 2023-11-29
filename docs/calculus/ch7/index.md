@@ -1,1 +1,1 @@
-#  Integrals and Transcendental Functions 
+# 7 Integrals and Transcendental Functions
