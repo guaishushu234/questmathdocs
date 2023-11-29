@@ -1,0 +1,34 @@
+site_name: QuestMath Tutoring Hub
+site_url: https://math.frontecho.cn/
+repo_name: frontecho/notebook
+repo_url: https://github.com/frontecho/questmathdocs/
+edit_uri: tree/main/docs
+site_description: 求索数学辅学站
+copyright: Copyright &copy; 2023 <a href="https://github.com/frontecho/questmathdocs" target="_blank" rel="noopener">QuestMath</a>
+
+theme: 
+  name: 'material'
+  language: 'zh'
+  icon: 
+    logo: material/notebook-outline
+  # custom_dir: overrides
+  features:
+    - content.code.annotate
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+  font: false
+  palette:
+    - scheme: default
+
+plugins:
+  - search
+
+# not_in_nav: todo.md
+
+nav:
+  - 主页:
+    - index.md
+  - 微积分:
+    - /calculus/index.md
