@@ -90,7 +90,7 @@ nav:
       - 5.1 Area and Estimating with Finite Sums: calculus/ch5/5.1.md
       - 5.2 Sigma Notation and Limits of Finite Sums:
         - calculus/ch5/5.2.md
-        - calculus/ch5/5.2Riemann-Sums.md
+        - Riemann Sums: calculus/ch5/5.2-Riemann-Sums.md
       - 5.3 The Definite Integral: calculus/ch5/5.3.md
       - 5.4 The Fundamental Theorem of Calculus: calculus/ch5/5.4.md
       - 5.5 Indefinite Integrals and the Substitution Method: calculus/ch5/5.5.md
