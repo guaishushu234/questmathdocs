@@ -31,4 +31,4 @@ nav:
   - 主页:
     - index.md
   - 微积分:
-    - /calculus/index.md
+    - calculus/index.md
