@@ -1,6 +1,6 @@
 site_name: QuestMath Tutoring Hub
 site_url: https://math.frontecho.cn/
-repo_name: frontecho/notebook
+repo_name: frontecho/questmathdocs
 repo_url: https://github.com/frontecho/questmathdocs/
 edit_uri: tree/main/docs
 site_description: 求索数学辅学站
@@ -25,11 +25,25 @@ theme:
 plugins:
   - search
 
-# not_in_nav: todo.md
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: ignore
+    absolute_links: ignore
+    unrecognized_links: ignore
+
+exclude_docs: |
+  todo.md
+  content.txt
+  CreateFileFromContent.py
+
 
 nav:
   - 主页:
-    - "index.md"
+    - index.md
   - Calculus:
     - calculus/index.md
     - 1 Functions: 
