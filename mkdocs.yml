@@ -11,7 +11,7 @@ theme:
   language: 'zh'
   icon: 
     logo: material/notebook-outline
-  # custom_dir: overrides
+  custom_dir: overrides
   features:
     - content.code.annotate
     - navigation.tracking
