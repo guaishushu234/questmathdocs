@@ -2,35 +2,85 @@ site_name: QuestMath Tutoring Hub
 site_url: https://math.frontecho.cn/
 repo_name: frontecho/questmathdocs
 repo_url: https://github.com/frontecho/questmathdocs/
-edit_uri: tree/main/docs
-site_description: 求索数学辅学站
-copyright: Copyright &copy; 2023 <a href="https://github.com/frontecho/questmathdocs/" target="_blank" rel="noopener">QuestMath</a>
+site_description: >-
+  求索数学辅学站
+copyright: <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p><p>Copyright &copy; 2023 <a href="https://github.com/frontecho/questmathdocs/" target="_blank" rel="noopener">QuestMath</a></p>
 
 theme: 
   name: 'material'
   language: 'zh'
   icon: 
     logo: material/notebook-outline
+  # logo: assets/favicon.png
+  favicon: assets/favicon.png
   custom_dir: overrides
   features:
+    # - header.autohide
+    - announce.dismiss
+    - content.action.edit
+    # - content.action.view
     - content.code.annotate
-    - navigation.tracking
-    - navigation.tabs
+    - content.code.copy
+    # - content.code.select
+    - content.tooltips
+    # - navigation.expand
+    # - navigation.footer
     - navigation.indexes
+    - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    # - content.tabs.link
     - navigation.top
-  font: false
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  font:
+    text: 'Fira Sans'
+    code: 'Fira Mono'
   palette:
-    # Palette toggle for light mode
     - scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - scheme: slate
+      primary: black
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+
+extra:
+  disqus: 'OI-Wiki'
+  copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a>'
+  pagetime: 'on'
+  manifest: 'manifest.webmanifest'
+  githash: ''
+  # annotate:
+  #   json: [.s2]
+  # analytics:
+  #   provider: google #custom
+  #   property: G-DYETCPM289
+  # social:
+  #   - icon: fontawesome/brands/github
+  #     link: https://github.com/frontecho/questmathdocs/
+  #   - icon: fontawesome/solid/rss
+  #     link: https://blog.tonycrane.cc/
+  #   - icon: fontawesome/solid/home
+  #     link: https://note.frontecho.cn/
+
+extra_css:
+  # - stylesheets/custom.css
+  - stylesheets/extra.css
+  - stylesheets/flink.css
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -38,16 +88,18 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 markdown_extensions:
+  # Python Markdown
+  - tables
+  - sane_lists
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
   - toc:
       permalink: true
-  - abbr
-  - tables
-  # - meta
-  - def_list
-  - attr_list
-  - md_in_html
-  - sane_lists
-  - admonition
+  # Python Markdown Extensions
   - pymdownx.keys
   - pymdownx.caret
   - pymdownx.mark
@@ -59,12 +111,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.smartsymbols
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji 
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      options:
-        custom_icons:
-          - overrides/.icons
   - pymdownx.tabbed:
       alternate_style: true 
   - pymdownx.tasklist:
@@ -73,9 +119,35 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
 
 plugins:
   - search
+  - minify:
+      minify_html: true
+  - tags:
+      tags_file: tags.md
+  - glightbox
+  # - statistics:
+  #     page_check_metadata: comment
+  # - changelog
+  # - heti
 
 validation:
   nav:
@@ -97,8 +169,10 @@ not_in_nav: |
 
 
 nav:
-  - Home:
+  - 🏡Home:
     - index.md
+    - 🔗友链: links.md
+    - 🔖标签: tags.md
   - Calculus:
     - calculus/index.md
     - 1 Functions: 
