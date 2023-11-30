@@ -2,6 +2,7 @@ site_name: QuestMath Tutoring Hub
 site_url: https://math.frontecho.cn/
 repo_name: frontecho/questmathdocs
 repo_url: https://github.com/frontecho/questmathdocs/
+edit_uri: /edit/main/docs/
 site_description: >-
   求索数学辅学站
 copyright: Copyright &copy; 2023 <a href="https://github.com/frontecho/questmathdocs/" target="_blank" rel="noopener">QuestMath</a>
