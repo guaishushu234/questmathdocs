@@ -4,14 +4,14 @@ repo_name: frontecho/questmathdocs
 repo_url: https://github.com/frontecho/questmathdocs/
 edit_uri: tree/main/docs
 site_description: 求索数学辅学站
-copyright: Copyright &copy; 2023 <a href="https://github.com/frontecho/questmathdocs" target="_blank" rel="noopener">QuestMath</a>
+copyright: Copyright &copy; 2023 <a href="https://github.com/frontecho/questmathdocs/" target="_blank" rel="noopener">QuestMath</a>
 
 theme: 
   name: 'material'
   language: 'zh'
   icon: 
     logo: material/notebook-outline
-  # custom_dir: overrides
+  custom_dir: overrides
   features:
     - content.code.annotate
     - navigation.tracking
@@ -20,7 +20,59 @@ theme:
     - navigation.top
   font: false
   palette:
+    # Palette toggle for light mode
     - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - abbr
+  - tables
+  # - meta
+  - def_list
+  - attr_list
+  - md_in_html
+  - sane_lists
+  - admonition
+  - pymdownx.keys
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      # options:
+      #   custom_icons:
+      #     - overrides/.icons
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
 
 plugins:
   - search
@@ -40,9 +92,12 @@ exclude_docs: |
   content.txt
   CreateFileFromContent.py
 
+not_in_nav: |
+  todo.md
+
 
 nav:
-  - 主页:
+  - Home:
     - index.md
   - Calculus:
     - calculus/index.md
@@ -88,9 +143,7 @@ nav:
     - 5 Integrals:
       - calculus/ch5/index.md
       - 5.1 Area and Estimating with Finite Sums: calculus/ch5/5.1.md
-      - 5.2 Sigma Notation and Limits of Finite Sums:
-        - calculus/ch5/5.2.md
-        - Riemann Sums: calculus/ch5/5.2-Riemann-Sums.md
+      - 5.2 Sigma Notation and Limits of Finite Sums: calculus/ch5/5.2.md
       - 5.3 The Definite Integral: calculus/ch5/5.3.md
       - 5.4 The Fundamental Theorem of Calculus: calculus/ch5/5.4.md
       - 5.5 Indefinite Integrals and the Substitution Method: calculus/ch5/5.5.md
