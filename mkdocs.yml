@@ -4,7 +4,7 @@ repo_name: frontecho/questmathdocs
 repo_url: https://github.com/frontecho/questmathdocs/
 site_description: >-
   求索数学辅学站
-copyright: <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p><p>Copyright &copy; 2023 <a href="https://github.com/frontecho/questmathdocs/" target="_blank" rel="noopener">QuestMath</a></p>
+copyright: Copyright &copy; 2023 <a href="https://github.com/frontecho/questmathdocs/" target="_blank" rel="noopener">QuestMath</a>
 
 theme: 
   name: 'material'
@@ -59,11 +59,6 @@ theme:
         name: Switch to light mode
 
 extra:
-  disqus: 'OI-Wiki'
-  copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a>'
-  pagetime: 'on'
-  manifest: 'manifest.webmanifest'
-  githash: ''
   # annotate:
   #   json: [.s2]
   # analytics:
@@ -79,7 +74,7 @@ extra:
 
 extra_css:
   # - stylesheets/custom.css
-  - stylesheets/extra.css
+  # - stylesheets/extra.css
   - stylesheets/flink.css
 
 extra_javascript:

@@ -3,10 +3,7 @@
 
 <!-- prettier-ignore-start -->
 !!! success "Hello World"
-
-    <div align="center" style="font-size:32px;font-family:'FZXS12';">
         Nice to Meet You in QuestMath Tutoring Hub ！
-    </div>
 <!-- prettier-ignore-end -->
 
 <!-- prettier-ignore-start -->
