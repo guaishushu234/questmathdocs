@@ -166,6 +166,8 @@ not_in_nav: |
 nav:
   - 🏡Home:
     - index.md
+    - 文档编写规范: docsrules.md
+    - 参与文档编写: contribute.md
     - 🔗友链: links.md
     - 🔖标签: tags.md
   - Calculus:
