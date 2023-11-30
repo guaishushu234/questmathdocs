@@ -64,9 +64,9 @@ extra:
   # analytics:
   #   provider: google #custom
   #   property: G-DYETCPM289
-  # social:
-  #   - icon: fontawesome/brands/github
-  #     link: https://github.com/frontecho/questmathdocs/
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/frontecho/questmathdocs/
   #   - icon: fontawesome/solid/rss
   #     link: https://blog.tonycrane.cc/
   #   - icon: fontawesome/solid/home
